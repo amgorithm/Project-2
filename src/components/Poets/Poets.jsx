@@ -19,8 +19,8 @@ function Poets({ poets }) {
     setSearch(e.target.value);
     // console.log(poets);
 
-    // ? updating the results, fitlering them, change each author to lwoercase + change input to lc and check if the input appears anywhere in the poet
-    //lc accoutns for both whats typed in and
+    // ? updating the results, filtering them, change each author to lc + change input to lc and check if the input appears anywhere in the poet
+    //lc accounts for both whats typed in being lc and makes the poets data c to check it against
     setResults(
       poets.filter((item) =>
         item.toLowerCase().includes(e.target.value.toLowerCase())
@@ -40,15 +40,6 @@ function Poets({ poets }) {
           </Link>
         </div>
       ))}
-
-      {/* <h2>Poets</h2>
-      {poets.map((poet) => (
-        <div key={poet}>
-          <Link to={`/author/${poet}`}>
-            <p>{poet}</p>
-          </Link>
-        </div>
-      ))} */}
     </div>
   );
 }
