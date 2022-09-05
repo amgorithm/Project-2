@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 
 function Poets({ poets }) {
   const [search, setSearch] = useState("");
@@ -31,15 +32,27 @@ function Poets({ poets }) {
     <div>
       <Header />
 
-      <input name="search" value={search} onChange={handleSearch} />
+      <input
+        name="search"
+        value={search}
+        placeholder={"Search by poet"}
+        onChange={handleSearch}
+      />
 
-      {results.map((poet) => (
-        <div key={poet}>
-          <Link to={`/author/${poet}`}>
-            <p>{poet}</p>
-          </Link>
-        </div>
-      ))}
+      {results ? (
+        results.map((poet) => (
+          <div key={poet}>
+            <Link to={`/poet/${poet}`}>
+              <p>{poet}</p>
+            </Link>
+          </div>
+        ))
+      ) : (
+        <p>Loading, please wait. </p>
+      )}
+
+      {/* <p>Loading, please wait. </p> */}
+      <Footer />
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import "./App.css";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, Navigate } from "react-router-dom";
 import Homepage from "./components/Homepage/Homepage";
 import PoetDetails from "./components/PoetDetails/PoetDetails.jsx";
 import React, { useState, useEffect } from "react";
@@ -39,11 +39,12 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<Homepage random={random} poets={poets} />} />
-        <Route path="/author/:poetID" element={<PoetDetails />} />
-        <Route path="/author/:poetID/:poemID" element={<RandomPoem />} />
+        <Route path="/poet/:poetID" element={<PoetDetails />} />
+        <Route path="/poet/:poetID/:poemID" element={<RandomPoem />} />
         <Route path="/about" element={<About />} />
         <Route path="/poets" element={<Poets poets={poets} />} />
-        <Route path="/results" element={<Poets poets={poets} />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
+        {/* <Route path="/results" element={<Poets poets={poets} />} /> */}
       </Routes>
     </div>
   );

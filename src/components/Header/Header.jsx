@@ -5,10 +5,7 @@ function Header({ poets }) {
   return (
     <div>
       <Link to={"/"}>
-        <h1>Header</h1>
-      </Link>
-      <Link to={"/about"}>
-        <p>About</p>
+        <h1>Poesy</h1>
       </Link>
       <Link to={"/poets"}>
         <p poets={poets}>Poets</p>

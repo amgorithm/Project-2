@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 
 function RandomPoem() {
@@ -20,17 +21,23 @@ function RandomPoem() {
   return (
     <div>
       <Header />
-      {poem.map((poem) => (
-        <div>
-          <p>
-            {poem.title} by {poem.author}
-          </p>
+      {poem ? (
+        poem.map((poem) => (
+          <div key={poem.title}>
+            <p>
+              {poem.title} by {poem.author}
+            </p>
 
-          {poem.lines.map((p) => (
-            <p>{p}</p>
-          ))}
-        </div>
-      ))}
+            {poem.lines.map((p, idx) => (
+              <p key={idx}>{p}</p>
+            ))}
+          </div>
+        ))
+      ) : (
+        <p>Loading, please wait.</p>
+      )}
+
+      <Footer />
     </div>
   );
 }

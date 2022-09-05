@@ -20,23 +20,22 @@ function PoetDetails() {
     <div>
       <Header />
 
-      {poet.map((poem) => (
-        <>
-          <h2>
-            {poem.title} by {poem.author}
-          </h2>
+      {poet ? (
+        poet.map((poem) => (
+          <>
+            <h2 key={poem.title}>
+              {poem.title} by {poem.author}
+            </h2>
 
-          {poem.lines.map((p) => (
-            <p>{p}</p>
-          ))}
-        </>
-      ))}
-
-      {/* {poet ? (
-       
+            {/* Check key for this: */}
+            {poem.lines.map((p, idx) => (
+              <p key={idx}>{p}</p>
+            ))}
+          </>
+        ))
       ) : (
-        <p>Doesn't exist</p>
-      )} */}
+        <p>Loading, please wait.</p>
+      )}
     </div>
   );
 }
