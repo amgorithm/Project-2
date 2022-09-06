@@ -26,13 +26,18 @@ function PoetDetails() {
         {poet ? (
           poet.map((poem) => (
             <>
-              <h2 key={poem.title}>
-                {poem.title} by {poem.author}
-              </h2>
+              <h4 className="poets-poem-titles" key={poem.title}>
+                {poem.title}
+              </h4>
+              <h4 className="poem-author">
+                by <span> {poem.author}</span>{" "}
+              </h4>
 
               {/* Check key for this: */}
               {poem.lines.map((p, idx) => (
-                <p key={idx}>{p}</p>
+                <p className="poem-lines" key={idx}>
+                  {p}
+                </p>
               ))}
             </>
           ))

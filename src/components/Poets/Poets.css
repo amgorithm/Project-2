@@ -1,5 +1,6 @@
 .poets {
   background-color: #f3ede8;
+  padding-bottom: 50px;
 }
 
 .poets-title {
@@ -11,6 +12,9 @@
 input {
   width: 300px;
   height: 20px;
+  border-radius: 3px;
+  border: 1px solid #0000a0;
+  text-align: center;
 }
 
 .poets {

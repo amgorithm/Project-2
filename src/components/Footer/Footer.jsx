@@ -7,6 +7,7 @@ function Footer() {
     <>
       <div className="footer">
         <hr />
+
         <Link
           style={{ textDecoration: "none", color: "#0000a0" }}
           to={"/about"}
