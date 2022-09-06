@@ -38,3 +38,9 @@ input {
 .poet-title:hover {
   color: #0000a0;
 }
+
+.loading {
+  font-family: "Belleza", sans-serif;
+  margin-left: 20px;
+  color: black;
+}

@@ -23,3 +23,7 @@ span {
   text-transform: uppercase;
   font-size: 10pt;
 }
+
+.loading {
+  font-family: "Belleza", sans-serif;
+}

@@ -23,7 +23,7 @@ function RandomPoem() {
     <>
       <Header />
       <div className="random-poem">
-        {poem ? (
+        {poem.length !== 0 ? (
           poem.map((poem) => (
             <div key={poem.title}>
               <h4 className="random-poem-title">{poem.title}</h4>
@@ -40,7 +40,7 @@ function RandomPoem() {
             </div>
           ))
         ) : (
-          <p>Loading, please wait.</p>
+          <p className="loading">Loading, please wait.</p>
         )}
       </div>
       <Footer />

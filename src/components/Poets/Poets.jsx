@@ -43,7 +43,7 @@ function Poets({ poets }) {
           />
         </div>
         <div className="poets-list">
-          {results ? (
+          {results.length !== 0 ? (
             results.map((poet) => (
               <div key={poet}>
                 <Link
@@ -55,7 +55,7 @@ function Poets({ poets }) {
               </div>
             ))
           ) : (
-            <p>Loading, please wait. </p>
+            <p className="loading">Loading, please wait. </p>
           )}
         </div>
       </div>

@@ -1,6 +1,5 @@
 img {
   width: 65px;
-  /* height: 80px; */
 }
 
 .homepage {
@@ -37,10 +36,6 @@ img {
 .f4 {
   margin-bottom: 10px;
 }
-
-/* .poet-info {
-  align-self: center;
-} */
 
 .ellipsis {
   text-align: center;
@@ -79,4 +74,8 @@ h5 {
 .fname,
 .fdates {
   margin: 5px;
+}
+
+.loading {
+  font-family: "Belleza", sans-serif;
 }

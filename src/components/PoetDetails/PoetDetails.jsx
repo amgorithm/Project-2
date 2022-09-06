@@ -23,7 +23,7 @@ function PoetDetails() {
     <>
       <Header />
       <div className="poet-details">
-        {poet ? (
+        {poet.length !== 0 ? (
           poet.map((poem) => (
             <>
               <h4 className="poets-poem-titles" key={poem.title}>
@@ -33,7 +33,6 @@ function PoetDetails() {
                 by <span> {poem.author}</span>{" "}
               </h4>
 
-              {/* Check key for this: */}
               {poem.lines.map((p, idx) => (
                 <p className="poem-lines" key={idx}>
                   {p}
@@ -42,7 +41,7 @@ function PoetDetails() {
             </>
           ))
         ) : (
-          <p>Loading, please wait.</p>
+          <p className="loading">Loading, please wait.</p>
         )}
       </div>
       <Footer />

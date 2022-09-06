@@ -13,7 +13,7 @@ function Homepage({ poets, random }) {
         <section className="random-poem">
           <h3 className="homepage-titles">Random poem</h3>
 
-          {random ? (
+          {random.length !== 0 ? (
             random.map((poem) => (
               <div key={poem.title}>
                 <h4 className="poem-title">{poem.title}</h4>
@@ -41,7 +41,7 @@ function Homepage({ poets, random }) {
               </div>
             ))
           ) : (
-            <p>Loading, please wait.</p>
+            <p className="loading">Loading, please wait.</p>
           )}
         </section>
 
