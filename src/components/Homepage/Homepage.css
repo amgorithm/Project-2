@@ -1,0 +1,65 @@
+img {
+  width: 65px;
+  /* height: 80px; */
+}
+
+.homepage {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+h3 {
+  font-family: "Italiana", serif;
+  text-transform: uppercase;
+  font-size: 18pt;
+}
+
+.featured {
+  padding-bottom: 50px;
+}
+
+.poet-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid red;
+}
+
+.f1,
+.f2,
+.f3,
+.f4 {
+  margin-bottom: 10px;
+}
+
+/* .poet-info {
+  align-self: center;
+} */
+
+.ellipsis {
+  text-align: center;
+}
+
+button {
+  background-color: #0000a0;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.poet {
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+span,
+h5 {
+  color: #0000a0;
+  text-transform: uppercase;
+}

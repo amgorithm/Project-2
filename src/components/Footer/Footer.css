@@ -1,0 +1,15 @@
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Italiana", serif;
+}
+
+hr {
+  /* margin-top: 20px; */
+  margin-left: 20px;
+  margin-right: 20px;
+}
