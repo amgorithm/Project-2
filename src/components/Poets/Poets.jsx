@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
+import "./Poets.css";
 
 function Poets({ poets }) {
   const [search, setSearch] = useState("");
@@ -29,31 +30,37 @@ function Poets({ poets }) {
     );
   }
   return (
-    <div>
+    <>
       <Header />
-
-      <input
-        name="search"
-        value={search}
-        placeholder={"Search by poet"}
-        onChange={handleSearch}
-      />
-
-      {results ? (
-        results.map((poet) => (
-          <div key={poet}>
-            <Link to={`/poet/${poet}`}>
-              <p>{poet}</p>
-            </Link>
-          </div>
-        ))
-      ) : (
-        <p>Loading, please wait. </p>
-      )}
-
-      {/* <p>Loading, please wait. </p> */}
+      <div className="poets">
+        <h3 className="poets-title">All poets</h3>
+        <div className="search-bar">
+          <input
+            name="search"
+            value={search}
+            placeholder={"Search by poet"}
+            onChange={handleSearch}
+          />
+        </div>
+        <div className="poets-list">
+          {results ? (
+            results.map((poet) => (
+              <div key={poet}>
+                <Link
+                  to={`/poet/${poet}`}
+                  style={{ textDecoration: "none", color: "black" }}
+                >
+                  <h5 className="poet-title">{poet}</h5>
+                </Link>
+              </div>
+            ))
+          ) : (
+            <p>Loading, please wait. </p>
+          )}
+        </div>
+      </div>
       <Footer />
-    </div>
+    </>
   );
 }
 

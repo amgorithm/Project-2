@@ -1,4 +1,5 @@
 .footer {
+  /* double check fixed: */
   position: fixed;
   left: 0;
   bottom: 0;
@@ -6,6 +7,7 @@
   text-align: center;
   text-transform: uppercase;
   font-family: "Italiana", serif;
+  background-color: #f3ede8;
 }
 
 hr {

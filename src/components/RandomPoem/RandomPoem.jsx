@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
+import "./RandomPoem.css";
 
 function RandomPoem() {
   const [poem, setPoem] = useState([]);
@@ -19,26 +20,31 @@ function RandomPoem() {
   }, [poemID]);
 
   return (
-    <div>
+    <>
       <Header />
-      {poem ? (
-        poem.map((poem) => (
-          <div key={poem.title}>
-            <p>
-              {poem.title} by {poem.author}
-            </p>
+      <div className="random-poem">
+        {poem ? (
+          poem.map((poem) => (
+            <div key={poem.title}>
+              <h4 className="random-poem-title">{poem.title}</h4>
+              <h4 className="random-poet">
+                {" "}
+                by <span> {poem.author}</span>{" "}
+              </h4>
 
-            {poem.lines.map((p, idx) => (
-              <p key={idx}>{p}</p>
-            ))}
-          </div>
-        ))
-      ) : (
-        <p>Loading, please wait.</p>
-      )}
-
+              {poem.lines.map((p, idx) => (
+                <p className="poem-lines" key={idx}>
+                  {p}
+                </p>
+              ))}
+            </div>
+          ))
+        ) : (
+          <p>Loading, please wait.</p>
+        )}
+      </div>
       <Footer />
-    </div>
+    </>
   );
 }
 
