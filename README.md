@@ -29,7 +29,7 @@ The application was split into four core components; homepage, poets, poems, and
 
 Excalidraw was used to plan and sketch the design of the application:
 
-(./src/components/images/Poesy_Wireframe.png)
+![Poesy Wireframe](./src/components/images/Poesy_Wireframe.png)
 
 ## Build/Code Process
 
