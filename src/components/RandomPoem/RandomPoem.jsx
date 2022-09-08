@@ -13,11 +13,10 @@ function RandomPoem() {
     fetch(`https://poetrydb.org/author,title/${poetID};${[poemID]}`)
       .then((response) => response.json())
       .then((poem) => {
-        console.log("Poem data ->", poem);
         setPoem(poem);
       })
       .catch(console.error);
-  }, [poemID]);
+  }, [poemID, poetID]);
 
   return (
     <>

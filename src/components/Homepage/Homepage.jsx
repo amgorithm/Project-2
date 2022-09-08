@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./Homepage.css";
 import Header from "../Header/Header";
 import { Link } from "react-router-dom";
