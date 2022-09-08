@@ -29,37 +29,37 @@ The application was split into four core components; homepage, poets, poems, and
 
 Excalidraw was used to plan and sketch the design of the application:
 
-("./src/components/images/Poesy_Wireframe.png")
+![Poesy Wireframe](./src/components/images/Poesy_Wireframe.png)
 
 ## Build/Code Process
 
 The application was first set up with routes in App.js for the pages that users would navigate to. This includes pages for the poets and their poems, the about section, a return to the homepage by clicking the POESY header title, and a catch-all for entering a route-less URL redirects to the homepage. API calls for authors and a random poem were also lifted to App.js, which were passed as props to various components:
 
-("./src/components/images/App.png")
+![App](./src/components/images/App.png)
 
 The homepage component contains two main sections; a random poem and featured poets. A preview of a random poem that changes on refresh is shown on the left of the homepage. Users can click the “read more” button to access the poem in full, which links to the random poem component:
 
-("./src/components/images/Random_Poem.png")
+![Random Poem](./src/components/images/Random_Poem.png)
 
 The featured poets section displays four clickable poets that link to the poet’s page with their poems. The featured section was hard coded with the intention of routinely updating the featured poets.
 
-("./src/components/images/Homepage.png")
+![Homepage](./src/components/images/Homepage.png)
 
 The poets component contains a list of all poets available on the API in alphabetical order and a search function that filters this list based on the poet’s name.
 
-("./src/components/images/Poets.png")
+![Poets](./src/components/images/Poets.png)
 
 As shown here, the filter’s use of the includes and lowercase methods allows for a returned list of clickable authors that include the entered letters in the search bar:
 
-("./src/components/images/Poets_list.png")
+![Poet List](./src/components/images/Poets_list.png)
 
 Poets clicked on will link to the poet details component, which showcases a collection of the author’s poems rendered via an API call.
 
-("./src/components/images/Poet_Details.png")
+![Poet Details](./src/components/images/Poet_Details.png)
 
 The final core component is the about section is accessed via the footer component. This section provides a quote about the power and importance of poetry and a summary of the contents found on the website.
 
-("./src/components/images/About.png")
+![About](./src/components/images/About.png)
 
 ## Challenges
 
