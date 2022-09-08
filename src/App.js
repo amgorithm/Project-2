@@ -10,12 +10,6 @@ import RandomPoem from "./components/RandomPoem/RandomPoem";
 function App() {
   const [poets, setPoets] = useState([]);
   const [random, setRandom] = useState([]);
-  // const [hearted, setHearted] = useState([
-  //   {
-  //     name: "",
-  //     poem: "",
-  //   },
-  // ]);
 
   useEffect(() => {
     fetch("https://poetrydb.org/authors")
@@ -44,7 +38,6 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/poets" element={<Poets poets={poets} />} />
         <Route path="*" element={<Navigate to="/" replace />} />
-        {/* <Route path="/results" element={<Poets poets={poets} />} /> */}
       </Routes>
     </div>
   );

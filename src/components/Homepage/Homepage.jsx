@@ -9,7 +9,7 @@ function Homepage({ poets, random }) {
     <>
       <Header />
 
-      <section className="homepage">
+      <div className="homepage">
         <section className="random-poem">
           <h3 className="homepage-titles">Random poem</h3>
 
@@ -134,7 +134,7 @@ function Homepage({ poets, random }) {
             </div>
           </div>
         </section>
-      </section>
+      </div>
       <Footer />
     </>
   );
