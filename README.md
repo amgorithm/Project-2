@@ -14,7 +14,7 @@ The technical requirements set for the project included the need to:
 
 ## Deployment link
 
-The POESY application can be accessed here: https://inspiring-naiad-c1ba6f.netlify.app/
+The POESY application can be accessed here: https://poesy.netlify.app/
 
 ## Getting Started/Code Installation
 
