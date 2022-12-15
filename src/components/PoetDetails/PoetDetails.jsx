@@ -13,7 +13,6 @@ function PoetDetails() {
     fetch(`https://poetrydb.org/author/${poetID}`)
       .then((response) => response.json())
       .then((poet) => {
-        console.log("Poet data ->", poet);
         setPoet(poet);
       })
       .catch(console.error);

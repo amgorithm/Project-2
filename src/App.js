@@ -15,7 +15,6 @@ function App() {
     fetch("https://poetrydb.org/authors")
       .then((response) => response.json())
       .then((poetData) => {
-        console.log("Poet data->", poetData);
         setPoets(poetData.authors);
       })
       .catch(console.error);
@@ -23,7 +22,6 @@ function App() {
     fetch("https://poetrydb.org/random")
       .then((response) => response.json())
       .then((randomPoem) => {
-        console.log("Random poem data->", randomPoem);
         setRandom(randomPoem);
       })
       .catch(console.error);
