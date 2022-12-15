@@ -72,6 +72,8 @@ The final core component is the about section which is accessed via the footer c
 
 ![About](./src/components/images/About.png)
 
+![About Page](./src/components/images/About_page.png)
+
 ## Challenges
 
 Initially, I sought to make a call to the API when a user searched for a poet. However, this posed a challenge because of the API's unexpected returns. This search approach was, therefore, discarded in favour of a less complicated filtering method on the list of poets within the poets component.
