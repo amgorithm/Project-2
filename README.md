@@ -2,19 +2,28 @@
 
 # Description
 
-As part of our second project on General Assembly’s Software Engineering course, we were assigned a week to create a React application that uses a public API. I undertook this project solo and decided to go with a website that showcases poetry. I used the PoetryDB API which can be accessed here: https://poetrydb.org
+As part of our second project on General Assembly’s Software Engineering course, we were assigned a week to create a React application that uses a public API. I undertook this project solo and set to create an application that consumed a literature-based API. As an avid reader of poetry, I was pleased to have found the PoetryDB API--its clean and consistent code made working with it a smooth process.
 
 The technical requirements set for the project included the need to:
 
-1. Consume a public API – this could be anything but it must make sense for your project.
-2. The app should include a router - with several “pages”.
-3. Include wireframes - that you designed before building the app.
-4. Have semantically clean HTML - you make sure you write HTML that makes structural sense rather than thinking about how it might look, which is the job of CSS.
-5. Be deployed online and accessible to the public.
+1. Consume a public API – this could be anything but it must make sense for your project
+2. The app should include a router - with several “pages”
+3. Include wireframes - that you designed before building the app
+4. Have semantically clean HTML - you make sure you write HTML that makes structural sense rather than thinking about how it might look, which is the job of CSS
+5. Be deployed online and accessible to the public
+
+###### Technologies used
+
+- HTML5
+- CSS
+- JavaScript (ES6)
+- ReactJS
+- Git
+- GitHub
 
 ## Deployment link
 
-The POESY application can be accessed here: https://inspiring-naiad-c1ba6f.netlify.app/
+The POESY application can be accessed here: https://poesy.netlify.app/
 
 ## Getting Started/Code Installation
 
@@ -30,6 +39,8 @@ The application was split into four core components; homepage, poets, poems, and
 Excalidraw was used to plan and sketch the design of the application:
 
 ![Poesy Wireframe](./src/components/images/Poesy_Wireframe.png)
+
+I used Todoist to keep myself on track and oversee outstanding tasks.
 
 ## Build/Code Process
 
@@ -57,7 +68,7 @@ Poets clicked on will link to the poet details component, which showcases a coll
 
 ![Poet Details](./src/components/images/Poet_Details.png)
 
-The final core component is the about section is accessed via the footer component. This section provides a quote about the power and importance of poetry and a summary of the contents found on the website.
+The final core component is the about section which is accessed via the footer component. As displayed below, this section provides a quote about the power and importance of poetry and a summary of the contents found on the website.
 
 ![About](./src/components/images/About.png)
 
@@ -65,7 +76,7 @@ The final core component is the about section is accessed via the footer compone
 
 Initially, I sought to make a call to the API when a user searched for a poet. However, this posed a challenge because of the API's unexpected returns. This search approach was, therefore, discarded in favour of a less complicated filtering method on the list of poets within the poets component.
 
-Another challenge has been generating a unique key for the poems as its generation is a nested map. As of currently, this challenge persists and will be tackled at a later date.
+Another challenge has been generating a unique key for the poems as its generation is a nested map. Currently, this challenge persists and will be explored at a later date. As I have recognised and isolated this bug, I will then be able to determine its cause and fix. Should this be unsuccessful, I will be sure to post on Stack Overflow for further assistance.
 
 ## Wins
 
