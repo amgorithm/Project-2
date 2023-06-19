@@ -12,7 +12,7 @@ The technical requirements set for the project included the need to:
 4. Have semantically clean HTML - you make sure you write HTML that makes structural sense rather than thinking about how it might look, which is the job of CSS
 5. Be deployed online and accessible to the public
 
-###### Technologies used
+### Technologies used
 
 - HTML5
 - CSS
