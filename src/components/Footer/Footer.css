@@ -1,17 +1,29 @@
+
+
 .footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
+  position: fixed; 
+  bottom: 0; 
+  left: 0; 
+  right: 0;
+  z-index: 10;
+  width: 90%;
+  margin: 0 auto;
+  background-color: #f3ede8;
   text-align: center;
   text-transform: uppercase;
   font-family: "Italiana", serif;
-  background-color: #f3ede8;
-  padding-top: 25px;
 }
 
-hr {
-  margin-left: 20px;
-  margin-right: 20px;
-  background-color: #f3ede8;
+
+@media only screen and (min-width: 768px){
+  .footer {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 1600px){
+
+  .footer{
+    width: 55%;
+  }
 }

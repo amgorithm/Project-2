@@ -25,7 +25,7 @@ function PoetDetails() {
         {poet.length !== 0 ? (
           poet.map((poem) => (
             <div className="poem-block">
-              <h4 className="" key={poem.title}>
+              <h4 className="poem-title" key={poem.title}>
                 {poem.title}
               </h4>
               <h4 className="poet">

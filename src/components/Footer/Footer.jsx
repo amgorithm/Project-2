@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <>
       <div className="footer">
         <hr />
 
@@ -15,7 +14,7 @@ function Footer() {
           <h2>About</h2>
         </Link>
       </div>
-    </>
+
   );
 }
 

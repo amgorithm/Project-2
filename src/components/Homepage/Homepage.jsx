@@ -23,7 +23,7 @@ function Homepage({ poets, random }) {
                   style={{ textDecoration: "none", color: "black" }}
                 >
                   <h4 className="poet">
-                    by <span>{poem?.author} </span>{" "}
+                    by <span className="author">{poem?.author} </span>{" "}
                   </h4>
                 </Link>
 

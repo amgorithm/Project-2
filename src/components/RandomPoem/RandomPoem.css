@@ -11,3 +11,17 @@
 .loading {
   font-family: "Belleza", sans-serif;
 }
+
+
+@media only screen and (min-width: 992px){
+  .random-poem p {
+    font-size: 1.05rem;
+  }
+}
+
+@media only screen and (min-width: 1600px){
+
+  .random-poem p {
+    font-size: 1.1rem;
+  }
+}
