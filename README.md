@@ -94,4 +94,4 @@ No bugs to report!
 
 ## Future Improvements
 
-Future enhancements will include the addition of a save functionality for particular poems and making the application responsive. Unfortunately, unforeseen circumstances during the project's development prevented me from implementing these features at the time.
+Future enhancements will include the addition of a save functionality for particular poems.
