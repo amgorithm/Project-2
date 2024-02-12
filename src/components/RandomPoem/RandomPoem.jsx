@@ -26,9 +26,9 @@ function RandomPoem() {
           poem.map((poem) => (
             <div key={poem.title}>
               <h4 className="random-poem-title">{poem.title}</h4>
-              <h4 className="random-poet">
+              <h4 className="poet">
                 {" "}
-                by <span> {poem.author}</span>{" "}
+                by <span className="author"> {poem.author}</span>{" "}
               </h4>
 
               {poem.lines.map((p, idx) => (

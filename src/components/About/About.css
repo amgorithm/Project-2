@@ -3,22 +3,41 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 10px;
 }
 
 .about-title {
-  font-family: "Italiana", serif;
-  text-transform: uppercase;
-  font-size: 18pt;
+  font-size: 1.5rem;
+}
+
+.poem-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
 .about-poem {
   color: grey;
-  font-family: "Belleza", sans-serif;
   text-align: center;
-  margin-bottom: 0;
-  margin-top: 10px;
+  font-size: 1.1rem;
 
-  font-size: 12pt;
+}
+
+h6 {
+  font-size: 0.8rem;
+}
+
+
+.about-poet {
+  color: black;
+  text-align: center;
+  align-self: end;
+
+}
+
+.about-info {
+  font-size: 1.15rem;
 }
 
 .about-poesy {
@@ -26,32 +45,7 @@
   color: black;
   font-weight: bold;
   font-family: "Italiana", serif;
-  font-size: 12pt;
+  font-size: 1rem;
 }
 
-.poem-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 
-.about-poet {
-  color: black;
-  font-family: "Belleza", sans-serif;
-  text-align: center;
-  align-self: end;
-  margin-top: 15px;
-}
-
-.about-info {
-  margin-left: 150px;
-  margin-right: 150px;
-  font-family: "Belleza", sans-serif;
-  font-size: 14pt;
-}
-
-span {
-  text-transform: uppercase;
-  font-size: 10pt;
-  color: #0000a0;
-}

@@ -24,20 +24,23 @@ function PoetDetails() {
       <div className="poet-details">
         {poet.length !== 0 ? (
           poet.map((poem) => (
-            <>
-              <h4 className="poets-poem-titles" key={poem.title}>
+            <div className="poem-block">
+              <h4 className="" key={poem.title}>
                 {poem.title}
               </h4>
-              <h4 className="poem-author">
-                by <span> {poem.author}</span>{" "}
+              <h4 className="poet">
+                by <span className="author"> {poem.author}</span>{" "}
               </h4>
-
+             
               {poem.lines.map((p, idx) => (
+              
                 <p className="poem-lines" key={idx}>
                   {p}
                 </p>
+              
               ))}
-            </>
+
+            </div>
           ))
         ) : (
           <p className="loading">Loading, please wait.</p>

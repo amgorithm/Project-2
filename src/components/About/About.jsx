@@ -9,15 +9,17 @@ function About() {
       <Header />
       <section className="about">
         <h2 className="about-title"> About</h2>
+
         <div className="poem-header">
           <h5 className="about-poem">
-            "Poetry is nearer to vital truth than history"
+          &quot;Poetry is nearer to vital truth than history&quot;
           </h5>
           <h6 className="about-poet">
             {" "}
-            - <span> Plato</span>{" "}
+            - <span className="author"> Plato</span>{" "}
           </h6>
         </div>
+
         <div className="about-info">
           <p>
             <span className="about-poesy">Poesy</span> is an online collection

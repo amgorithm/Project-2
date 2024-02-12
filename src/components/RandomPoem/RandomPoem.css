@@ -1,35 +1,11 @@
 .random-poem {
-  font-family: "Belleza", sans-serif;
-  background-color: #f3ede8;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
+  padding: 10px;
 }
 
-.random-poem-title {
-  font-size: 16pt;
-  margin-bottom: 0;
-  margin-left: 20px;
-  margin-right: 20px;
-}
 
-.random-poet,
-span {
-  text-transform: uppercase;
-  font-size: 10pt;
-}
-
-span {
-  color: #0000a0;
-}
-
-.random-poet {
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 10px;
-}
-
-.poem-lines {
-  margin-left: 20px;
-  margin-right: 20px;
+.random-poem h4 {
+  cursor: default;
 }
 
 .loading {

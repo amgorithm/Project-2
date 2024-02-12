@@ -5,17 +5,17 @@
   align-items: center;
   text-transform: uppercase;
   font-family: "Italiana", serif;
-  margin-top: -16px;
-  margin-left: 20px;
-  margin-right: 20px;
+  padding: 5px;
 }
 
 h1 {
-  font-size: 36pt;
+  font-size: 2rem;
 }
 
-hr {
-  margin-top: -25px;
-  margin-left: 20px;
-  margin-right: 20px;
+.poets-nav {
+  font-size: 1.5rem;
+}
+
+.header-hr {
+  margin: 0px 10px;
 }

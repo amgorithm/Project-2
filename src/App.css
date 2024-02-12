@@ -1,6 +1,50 @@
-.App {
-  box-sizing: border-box;
+/* General */
+
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.4;
+}
+
+html {
   background-color: #f3ede8;
-  height: 100vh;
+  font-size: 16px;
+}
+
+body {
+  width: 90%;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 5px;
+}
+
+h1, h2, h3 {
+  font-family: "Italiana", serif;
+  text-transform: uppercase;
+}
+
+h4, h5, h6, p, button {
+  font-family: "Belleza", sans-serif;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+  margin-top: 5px;
+}
+
+.author {
+  color: #0000a0;
+  text-transform: uppercase;
+}
+
+.App {
+
 }

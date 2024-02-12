@@ -1,27 +1,15 @@
 .poet-details {
-  font-family: "Belleza", sans-serif;
-  background-color: #f3ede8;
+  padding: 10px;
   padding-bottom: 100px;
 }
 
-.poets-poem-titles {
-  font-size: 16pt;
-  margin-bottom: 0;
-  margin-left: 20px;
-  margin-right: 20px;
+
+.poet-details h4 {
+  cursor: default;
 }
 
-.poem-author {
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 10px;
-  text-transform: uppercase;
-}
-
-.poem-author,
-span {
-  text-transform: uppercase;
-  font-size: 10pt;
+.poem-block{
+  margin-bottom: 50px;
 }
 
 .loading {

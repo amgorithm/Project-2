@@ -14,10 +14,10 @@ function Header({ poets }) {
           style={{ textDecoration: "none", color: "#0000a0" }}
           to={"/poets"}
         >
-          <h2 poets={poets}>Poets</h2>
+          <h2 className="poets-nav" poets={poets}>Poets</h2>
         </Link>
       </div>
-      <hr />
+      <hr className="header-hr" />
     </>
   );
 }

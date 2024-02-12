@@ -10,8 +10,8 @@ function Homepage({ poets, random }) {
       <Header />
 
       <div className="homepage">
-        <section className="random-poem">
-          <h3 className="homepage-titles">Random poem</h3>
+        <section className="random-poem-section">
+          <h3>Random poem</h3>
 
           {random.length !== 0 ? (
             random.map((poem) => (
@@ -34,9 +34,9 @@ function Homepage({ poets, random }) {
                       <p key={idx}>{p}</p>
                     </>
                   ))}
-                <p className="ellipsis">. . . .</p>
+                <p className="ellipsis">. . .</p>
                 <Link to={`/poet/${poem.author}/${poem.title}`}>
-                  <button>Read more → </button>
+                  <button>Read more <span className="right-arrow">→</span></button>
                 </Link>
               </div>
             ))
@@ -45,7 +45,7 @@ function Homepage({ poets, random }) {
           )}
         </section>
 
-        <section className="featured">
+        <section className="featured-section">
           <h3 className="homepage-titles">Featured poets</h3>
 
           <div className="poet-cards">
@@ -56,7 +56,7 @@ function Homepage({ poets, random }) {
                     to={"/poet/Oscar Wilde"}
                     style={{ textDecoration: "none" }}
                   >
-                    <h5 className="fname">Oscar Wilde</h5>
+                    <h5 className="author">Oscar Wilde</h5>
                   </Link>
                   <p className="fdates">1854 - 1900</p>
                 </div>
@@ -77,7 +77,7 @@ function Homepage({ poets, random }) {
                     to={"/poet/Emily Dickinson"}
                     style={{ textDecoration: "none" }}
                   >
-                    <h5 className="fname">Emily Dickinson</h5>
+                    <h5 className="author">Emily Dickinson</h5>
                   </Link>
                   <p className="fdates">1830 - 1886</p>
                 </div>
@@ -98,7 +98,7 @@ function Homepage({ poets, random }) {
                     to={"/poet/Edgar Allan Poe"}
                     style={{ textDecoration: "none" }}
                   >
-                    <h5 className="fname">Edgar Allan Poe</h5>
+                    <h5 className="author">Edgar Allan Poe</h5>
                   </Link>
                   <p className="fdates">1809 - 1849</p>
                 </div>
@@ -119,7 +119,7 @@ function Homepage({ poets, random }) {
                     to={"/poet/Jane Austen"}
                     style={{ textDecoration: "none" }}
                   >
-                    <h5 className="fname">Jane Austen</h5>
+                    <h5 className="author">Jane Austen</h5>
                   </Link>
                   <p className="fdates">1775 - 1817</p>
                 </div>

@@ -1,12 +1,19 @@
 .poets {
-  background-color: #f3ede8;
-  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 100px;
 }
 
 .poets-title {
-  font-family: "Italiana", serif;
-  text-transform: uppercase;
-  font-size: 18pt;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.search-bar{
+  margin: 10px 0px;
 }
 
 input {
@@ -15,24 +22,19 @@ input {
   border-radius: 3px;
   border: 1px solid #0000a0;
   text-align: center;
-}
-
-.poets {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding: 12px;
+  font-family: "Belleza", sans-serif;
+  font-size: 1rem;
 }
 
 .poets-list {
-  margin-bottom: 30px;
-  font-family: "Belleza", sans-serif;
-  font-size: 16pt;
-  color: red;
+  margin-top: 10px;
+  font-size: 1.25rem;
 }
 
 .poet-title {
   color: black;
+  padding: 2.5px 0px;
 }
 
 .poet-title:hover {
